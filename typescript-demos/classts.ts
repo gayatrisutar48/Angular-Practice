@@ -1,9 +1,9 @@
 class greeting {
- greet():void
+ greet():void       //this is method    
  {
      console.log("hello welcome")
  }
 }
 
-var obj=new greeting()
-obj.greet()
+var obj1=new greeting()
+obj1.greet()

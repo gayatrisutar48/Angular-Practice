@@ -24,3 +24,24 @@ var num=12
 console.log("The num is"+num)
 num=45
 console.log(num)
+
+
+
+var global_num=10
+class numbers{
+ class_num=20
+static num1=30
+
+vari():void{
+    var local_num=40
+    console.log("Loacal number "+local_num)
+
+}
+}
+
+console.log("Global number "+global_num)
+var obj=new numbers
+obj.vari()
+console.log("CLass variable "+obj.class_num)
+console.log("Static  variable "+numbers.num1)
+

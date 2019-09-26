@@ -15,6 +15,23 @@ var e = d;
 console.log(e);
 //Inferred type in typescript
 var num = 12;
-num = 45;
 console.log("The num is" + num);
+num = 45;
 console.log(num);
+var global_num = 10;
+var numbers = /** @class */ (function () {
+    function numbers() {
+        this.class_num = 20;
+    }
+    numbers.prototype.vari = function () {
+        var local_num = 40;
+        console.log("Loacal number " + local_num);
+    };
+    numbers.num1 = 30;
+    return numbers;
+}());
+console.log("Global number " + global_num);
+var obj = new numbers;
+obj.vari();
+console.log("CLass variable " + obj.class_num);
+console.log("Static  variable " + numbers.num1);
