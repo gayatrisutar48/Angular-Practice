@@ -12,7 +12,7 @@
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": [
-      "app-practice/node_modules/@types"
+      "node_modules/@types"
     ],
     "lib": [
       "es2018",
