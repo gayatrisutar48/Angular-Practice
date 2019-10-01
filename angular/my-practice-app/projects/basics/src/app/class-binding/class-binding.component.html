@@ -1,0 +1,27 @@
+<p mt=5></p>
+<h1 class="alert alert-info">class-binding works!</h1>
+
+<h2 class=text-success>{{name}}</h2>
+<p [class]="propbind">codekul </p>
+
+<p class=text-special [class]="propbind">codekul</p>
+
+<h2 [class.text-special]="haserror">codekul</h2>  //ngClass is build in directive in angular
+<h2 [ngClass]="msg">codekul</h2>
+
+<style>
+    .text-success {
+        color: green;
+        border-color: black
+    }
+
+    .text-danger {
+        color: red;
+        border-color: black
+    }
+
+    .text-special {
+        color: blue;
+        font-style: italic
+    }
+</style>

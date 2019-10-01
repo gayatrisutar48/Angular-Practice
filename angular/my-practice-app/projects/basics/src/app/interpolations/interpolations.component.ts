@@ -12,6 +12,7 @@ export class InterpolationsComponent implements OnInit {
   private msg:string ="Interpolation"
 public siteurl=window.location.host
 
+
   constructor() { }
 
   ngOnInit() {

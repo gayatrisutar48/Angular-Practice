@@ -1,1 +1,14 @@
 <h1 class="alert alert-info">Property Binding</h1>
+<div class="col-md-6">
+    <input [id]="myid" type="text" value="Gayatri">
+</div>
+<div class="col-md-6" class="mt-2">
+  
+<button (click)="pressme()">click me!</button>
+</div>
+<div class="col-md-6" class="mt-2">
+    <input disabled [id]="myid" type="text" value={{name}}>
+</div>
+<div class="col-md-6" class="mt-2">
+    <input bind-id="myid" type="text" value="Gayatri">
+</div>

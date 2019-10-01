@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertiesComponent implements OnInit {
 
+public myid="testid"
+ name='gayatri'
+
   constructor() { }
 
   ngOnInit() {
   }
+
+pressme(){
+  this.name
+}
 
 }
