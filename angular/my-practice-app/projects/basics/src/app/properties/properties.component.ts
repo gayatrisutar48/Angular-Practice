@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PropertiesComponent implements OnInit {
 
 public myid="testid"
- name='gayatri'
+ name=""
 
   constructor() { }
 
@@ -16,7 +16,8 @@ public myid="testid"
   }
 
 pressme(){
-  this.name
+  this.name="hi gayatri"
+
 }
 
 }
