@@ -3,8 +3,10 @@
     <input [id]="myid" type="text" value="Gayatri">
 </div>
 <div class="col-md-6" class="mt-2">
-    <button (click)="pressme()">click me!</button>
-    {{name}}
+    <input #myInput type="text">
+    <button (click)="pressme(myInput.value)">click me!</button>
+{{myInput.value}}
+
 </div>
 <div class="col-md-6" class="mt-2">
     <input disabled [id]="myid" type="text" value="gayatri">

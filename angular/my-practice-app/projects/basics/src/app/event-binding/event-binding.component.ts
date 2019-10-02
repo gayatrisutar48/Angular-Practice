@@ -9,14 +9,23 @@ export class EventBindingComponent implements OnInit {
 
 public greeting=""
 
+
   constructor() { }
 
   ngOnInit() {
   }
 
   onclick(event){
-    console.log(event)
+    
     this.greeting="Welcome to codekul"
+    console.log(event)
+  }
+
+  clickme(event){
+    alert("button is clicked")
+    console.log(event)
   }
 
 }
+
+

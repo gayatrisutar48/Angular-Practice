@@ -1,7 +1,19 @@
 <div class="container">
 
-    <button (click)="onclick($event)">Greet</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
     <button (click)="greeting='welcome gayatri'">Greet</button>
     {{greeting}}
-</div>
 
+    <button (click)="onclick($event)">Greet</button>
+
+
+    <button (click)="clickme($event)">click me</button>
+
+    
+</div>
+<style>
+    button {
+        margin: 50px
+    }
+</style>
