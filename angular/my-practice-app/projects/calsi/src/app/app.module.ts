@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalsiCompComponent } from './calsi-comp/calsi-comp.component';
 
@@ -10,7 +11,8 @@ import { CalsiCompComponent } from './calsi-comp/calsi-comp.component';
     CalsiCompComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
