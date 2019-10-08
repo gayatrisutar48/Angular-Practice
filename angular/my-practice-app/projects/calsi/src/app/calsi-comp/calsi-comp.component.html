@@ -1,8 +1,26 @@
-<div class="container"><h1 class=" alert alert-info">calsi-comp works!</h1>
-<input [(ngModel)]='num1' class="text" type="number" name="num1" placeholder="Enter num1">
-<input [(ngModel)]='num2' class="text" type="number" name="num2" placeholder="Enter num2">
-<button (click)="addition()" >Add +</button>
-<button (click)="subtraction()" >sub -</button>
-<button (click)="multiplication()" >mul *</button>
-<button (click)="division()" >div /</button><br>{{result}}
+<div class="container">
+    <h1 class=" alert alert-info">calsi-comp works!</h1><br><br>
+    <div class="row">
+        <div class="col-md-3">
+            <input [(ngModel)]='num1' class="text" type="number" name="num1" placeholder="Enter num1">
+        </div>
+        <div class="col-md-3">
+            <input [(ngModel)]='num2' class="text" type="number" name="num2" placeholder="Enter num2">
+        </div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-1">
+            <button (click)="addition()" class="btn btn-outline-primary">Add +</button><br>
+        </div>
+        <div class="col-md-1">
+            <button (click)="subtraction()" class="btn btn-outline-primary">sub -</button><br>
+        </div>
+        <div class="col-md-1">
+            <button (click)="multiplication()" class="btn btn-outline-primary">mul *</button><br>
+        </div>
+        <div class="col-md-3">
+            <button (click)="division()" class="btn btn-outline-primary">div /</button><br>
+        </div>
+    </div>
+    <div  class="text" aria-valuetext="result" class="btn-outline-primary">{{result}}</div>
 </div>
